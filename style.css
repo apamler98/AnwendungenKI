@@ -1,0 +1,182 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #ed7100; /* Grundfarbe */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+.navbar {
+    background: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    display: block;
+}
+
+.navbar a:hover {
+    background: #ed7100; /* Grundfarbe */
+}
+
+/* Abschnitte */
+.section {
+    padding: 2rem 0;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #ed7100; /* Grundfarbe */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    text-align: justify;
+}
+
+.section ul {
+    list-style: disc;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+
+.section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Flexibles Layout entfernen */
+#studiengaenge ul,
+#campusleben ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#studiengaenge ul li,
+#campusleben ul li {
+    margin-bottom: 1rem;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Kontaktbereich */
+#kontakt address {
+    font-style: normal;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#kontakt address a {
+    color: #ed7100; /* Grundfarbe */
+    text-decoration: none;
+}
+
+#kontakt address a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .navbar a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    #studiengaenge ul li,
+    #campusleben ul li {
+        padding: 1rem;
+    }
+
+    #kontakt address {
+        text-align: left;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
